@@ -304,7 +304,7 @@
 
 </header>
 
-    <!-- 网站全局深色模式设置开始 -->
+    
 <script>
     if (localStorage.getItem('dark') === '1') {
     document.body.classList.add('dark');
@@ -319,9 +319,7 @@
 <a onclick="switchNightMode()" id="sma">
     <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i>
 </a>
-<!-- 网站全局深色模式设置结束 -->
-<!-- 添加首页banner视频背景开始 -->
-<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+
 <style>
     #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
     @media only screen and (max-width: 760px) { #index-video { display: none;}}
@@ -332,7 +330,7 @@
      <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/09/BMjAyMTA0MTcwOTU1MzlfMTg1ODk2MDg4N180Nzk1MzM5OTIyOV8xXzM=_b_Bb252492fbcbbfc1729d70bff84a369c1.mp4?pkey=AAUyFZx1DUzqe5a0YzevoNiJ5H4y-8qHn-6CxvZWGq3f7eaAZkH4TQ0MlCby2tu8KDKdjqFPWc6uK2CU6EynJwbOK4jy6fWaXpMJ4Jg2VONv2g4UEnb2QYdrZr9b_rI9yYE&tag=1-1618624606-xpcwebprofile-0-m7ojwj7hjp-39b38c9093fe954a&clientCacheKey=3x7baqkyiuj45k2_b.mp4"> 
     <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/11/BMjAyMTA0MTcxMTI4MTFfMTg1ODk2MDg4N180Nzk1ODkxODA3NV8xXzM=_b_B9a29e9e0917f8f86ff3a9aacaaf8d9d3.mp4"> -->
 </video>
-<!-- 添加首页banner视频背景结束 -->
+
 
 <style type="text/css">
     /* don't remove. */
@@ -525,7 +523,21 @@
 
                 <div class="introduction center-align" data-aos="fade-up">莫羡江城春初来， 独倚楼台花盛开。 潋滟几度凭栏吊， 边野樱红悦谁容。</div>
 
-                <style type="text/css">
+                
+<!-- 网站全局深色模式设置结束 -->
+<!-- 添加首页banner视频背景开始 -->
+<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <source src="https://alimov2.a.kwimgs.com/upic/2022/06/15/00/BMjAyMjA2MTUwMDEzMDdfMzU5MDEyODg1Xzc2Nzk2NDA1MDE2XzFfMw==_b_Bf03dc9c8c860715858fa0cec0f0e4a81.mp4?clientCacheKey=3xkbs5iaxvpun9i_b.mp4&tt=b&di=df4d6cf7&bp=10000"> 
+     
+</video>
+<!-- 添加首页banner视频背景结束 -->
+<style type="text/css">
     #posts-chart,
     #categories-chart,
     #tags-chart {
@@ -535,7 +547,6 @@
         padding: 0.5rem;
     }
 </style>
-
 <div id="postCharts" class="post-charts">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="far fa-bar-chart"></i>&nbsp;&nbsp;文章统计图
@@ -626,7 +637,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"-web渗透","value":7},{"name":"SQL注入","value":1},{"name":"-bypass","value":1},{"name":"-SQL注入","value":1},{"name":"-shellcode初探","value":1},{"name":"-ctf搭建","value":1},{"name":"-杂","value":1},{"name":"-免杀","value":1}],
+                data: [{"name":"-bypass","value":1},{"name":"SQL注入","value":1},{"name":"-web渗透","value":7},{"name":"-SQL注入","value":1},{"name":"-shellcode初探","value":1},{"name":"-杂","value":1},{"name":"-ctf搭建","value":1},{"name":"-免杀","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -650,7 +661,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["-web渗透","-SQL注入","-bypass","-工具","-shellcode初探","-ctf搭建","-杂","-免杀"]
+                data: ["-web渗透","-SQL注入","-bypass","-shellcode初探","-工具","-杂","-ctf搭建","-免杀"]
             }
         ],
         yAxis: [
@@ -794,8 +805,8 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/web%E6%B8%97%E9%80%8F/">
-                <span class="chip center-align waves-effect waves-light chip-default">-web渗透</span>
+            <a href="/tags/bypass/">
+                <span class="chip center-align waves-effect waves-light chip-default">-bypass</span>
             </a>
             
             
@@ -806,14 +817,8 @@
             
             
             
-            <a href="/tags/bypass/">
-                <span class="chip center-align waves-effect waves-light chip-default">-bypass</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                <span class="chip center-align waves-effect waves-light chip-default">-工具</span>
+            <a href="/tags/web%E6%B8%97%E9%80%8F/">
+                <span class="chip center-align waves-effect waves-light chip-default">-web渗透</span>
             </a>
             
             
@@ -824,14 +829,20 @@
             
             
             
-            <a href="/tags/ctf%E6%90%AD%E5%BB%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">-ctf搭建</span>
+            <a href="/tags/%E5%B7%A5%E5%85%B7/">
+                <span class="chip center-align waves-effect waves-light chip-default">-工具</span>
             </a>
             
             
             
             <a href="/tags/%E6%9D%82/">
                 <span class="chip center-align waves-effect waves-light chip-default">-杂</span>
+            </a>
+            
+            
+            
+            <a href="/tags/ctf%E6%90%AD%E5%BB%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">-ctf搭建</span>
             </a>
             
             
@@ -995,7 +1006,8 @@
             </script>
             
         </div>
-        
+        <br><a href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank"><img src='medias/youpaiyun.png' height='20px' width='200px' align='AbsMiddle'/>  
+        </a>   
     </div>
 </footer>
 

@@ -366,11 +366,11 @@
                 
                 
                 
-                <a href="/categories/web%E6%B8%97%E9%80%8F/" title="-web渗透: 7">
+                <a href="/categories/bypass/" title="-bypass: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">-web渗透
-                        <span class="tag-length">7</span>
+                            style="background-color: #F9EBEA;">-bypass
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -384,11 +384,11 @@
                 </a>
                 
                 
-                <a href="/categories/bypass/" title="-bypass: 1">
+                <a href="/categories/web%E6%B8%97%E9%80%8F/" title="-web渗透: 7">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">-bypass
-                        <span class="tag-length">1</span>
+                            style="background-color: #D5F5E3;">-web渗透
+                        <span class="tag-length">7</span>
                     </span>
                 </a>
                 
@@ -411,19 +411,19 @@
                 </a>
                 
                 
-                <a href="/categories/ctf%E6%90%AD%E5%BB%BA/" title="-ctf搭建: 1">
+                <a href="/categories/%E6%9D%82/" title="-杂: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F8F9F9;">-ctf搭建
+                            style="background-color: #F8F9F9;">-杂
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E6%9D%82/" title="-杂: 1">
+                <a href="/categories/ctf%E6%90%AD%E5%BB%BA/" title="-ctf搭建: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #82E0AA;">-杂
+                            style="background-color: #82E0AA;">-ctf搭建
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -479,7 +479,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"-web渗透","max":8},{"name":"SQL注入","max":8},{"name":"-bypass","max":8},{"name":"-SQL注入","max":8},{"name":"-shellcode初探","max":8},{"name":"-ctf搭建","max":8},{"name":"-杂","max":8},{"name":"-免杀","max":8}],
+            indicator: [{"name":"-bypass","max":8},{"name":"SQL注入","max":8},{"name":"-web渗透","max":8},{"name":"-SQL注入","max":8},{"name":"-shellcode初探","max":8},{"name":"-杂","max":8},{"name":"-ctf搭建","max":8},{"name":"-免杀","max":8}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -490,7 +490,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [7,1,1,1,1,1,1,1],
+                    value : [1,1,7,1,1,1,1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -502,6 +502,20 @@
     
 
 </main>
+
+
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <source src="https://alimov2.a.kwimgs.com/upic/2022/06/15/00/BMjAyMjA2MTUwMDEzMTNfMzU5MDEyODg1Xzc2Nzk2NDExMjAxXzFfMw==_b_Bc75aa25a67b9a321cd5e2a4fb8f6518c.mp4?clientCacheKey=3xhurb32n9f9j56_b.mp4&tt=b&di=df4d6cf7&bp=10000">
+    <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/16/22/BMjAyMTA0MTYyMjI2MjJfMTg1ODk2MDg4N180NzkzNzE2MzM1NF8xXzM=_b_B1cee98c70455b5ec6bdf05a3b739b606.mp4?pkey=AAUB10mjUylh71C1rT9zUK0k7UZXKh1t4JWavNQoALGAQ6zneNmw9-AJVJdj34LwUjF_C7Nvu_N3ZiM0NeFWVZ3HcLV-HnVcDlk07fDiX_9gwyjYVtx0HdfgCak15LCtfdw&tag=1-1618583324-xpcwebprofile-0-3swr1wcvno-ca64b2bbd036006d&clientCacheKey=3xdk95zbjuu2b4q_b.mp4"> -->
+     <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/09/BMjAyMTA0MTcwOTU1MzlfMTg1ODk2MDg4N180Nzk1MzM5OTIyOV8xXzM=_b_Bb252492fbcbbfc1729d70bff84a369c1.mp4?pkey=AAUyFZx1DUzqe5a0YzevoNiJ5H4y-8qHn-6CxvZWGq3f7eaAZkH4TQ0MlCby2tu8KDKdjqFPWc6uK2CU6EynJwbOK4jy6fWaXpMJ4Jg2VONv2g4UEnb2QYdrZr9b_rI9yYE&tag=1-1618624606-xpcwebprofile-0-m7ojwj7hjp-39b38c9093fe954a&clientCacheKey=3x7baqkyiuj45k2_b.mp4"> -->
+    <!-- <source src="https://txmov2.a.yximgs.com/upic/2021/04/17/11/BMjAyMTA0MTcxMTI4MTFfMTg1ODk2MDg4N180Nzk1ODkxODA3NV8xXzM=_b_B9a29e9e0917f8f86ff3a9aacaaf8d9d3.mp4"> -->
+</video>
+
 
     <style>
     span.footer-music{
@@ -602,7 +616,8 @@
             </script>
             
         </div>
-        
+        <br><a href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank"><img src='medias/youpaiyun.png' height='20px' width='200px' align='AbsMiddle'/>  
+        </a>   
     </div>
 </footer>
 

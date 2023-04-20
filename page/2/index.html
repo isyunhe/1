@@ -305,6 +305,8 @@
 </header>
 
     
+
+
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
@@ -350,6 +352,7 @@
 
     </div>
 </div>
+
 
 
 
@@ -423,36 +426,25 @@ $(function () {
 
 
 
+<!-- 网站全局深色模式设置结束 -->
+<!-- 添加首页banner视频背景开始 -->
+<!-- 若要恢复banner图片则注释这一段html和css即可 -->
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 110vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+    <source src="https://alimov2.a.kwimgs.com/upic/2022/06/15/00/BMjAyMjA2MTUwMDEzMDdfMzU5MDEyODg1Xzc2Nzk2NDA1MDE2XzFfMw==_b_Bf03dc9c8c860715858fa0cec0f0e4a81.mp4?clientCacheKey=3xkbs5iaxvpun9i_b.mp4&tt=b&di=df4d6cf7&bp=10000"> 
+     
+</video>
+<!-- 添加首页banner视频背景结束 -->
+
+
 <div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
 
 <div class="row">
 
-    
-    
-    <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('medias/images/shexiangtou.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="category">-web渗透</a>
-                        
-                    
-                </div>
-                <a href="/2022/12/14/cve-2021-36260-hai-kang-wei-shi-she-xiang-tou-li-yong/">
-                    <h3 class="post-title">CVE-2021-36260 海康威视摄像头利用</h3>
-                </a>
-                <p class="post-description">
-                    
-                        CVE-2021-36260 海康威视摄像头利用
-                    
-                </p>
-                <a href="/2022/12/14/cve-2021-36260-hai-kang-wei-shi-she-xiang-tou-li-yong/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
     
     
     <div class="col s12 m6" >
@@ -473,7 +465,33 @@ $(function () {
                         bypass_user
                     
                 </p>
-                <a href="/2023/03/03/useradd-mian-sha-360-he-jing/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
+                <a href="/2023/03/03/useradd-mian-sha-360-he-jing/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" >
+        <div class="post-card" style="background-image: url('medias/images/shexiangtou.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/web%E6%B8%97%E9%80%8F/" class="category">-web渗透</a>
+                        
+                    
+                </div>
+                <a href="/2022/12/14/cve-2021-36260-hai-kang-wei-shi-she-xiang-tou-li-yong/">
+                    <h3 class="post-title">CVE-2021-36260 海康威视摄像头利用</h3>
+                </a>
+                <p class="post-description">
+                    
+                        CVE-2021-36260 海康威视摄像头利用
+                    
+                </p>
+                <a href="/2022/12/14/cve-2021-36260-hai-kang-wei-shi-she-xiang-tou-li-yong/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -511,7 +529,7 @@ $(function () {
                             <span class="card-title">nmap用法：</span>
                         </div>
                     </a>
-
+                    
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
@@ -558,7 +576,7 @@ $(function () {
                             <span class="card-title">过火绒静态免杀</span>
                         </div>
                     </a>
-
+                    
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
@@ -724,7 +742,8 @@ $(function () {
             </script>
             
         </div>
-        
+        <br><a href='https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral' target="_blank"><img src='medias/youpaiyun.png' height='20px' width='200px' align='AbsMiddle'/>  
+        </a>   
     </div>
 </footer>
 
