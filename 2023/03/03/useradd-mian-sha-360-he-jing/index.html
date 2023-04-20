@@ -511,33 +511,21 @@
             <div id="articleContent">
                 <h3 id="0x01-前言"><a href="#0x01-前言" class="headerlink" title="0x01 前言"></a><strong>0x01 前言</strong></h3><p>在渗透测试过程中，因有些需求，需要本地/远程添加用户从而登录远程桌面等服务进行横向(不考虑 hash 传递场景)，而直接通过<code>net.exe</code>进行添加用户，往往会被安全软件直接阻断拦截，所以直接选择<code>Windows API函数</code>进行编写，进行 Bypass AV。</p>
 <h3 id="0x02-安全软件拦截"><a href="#0x02-安全软件拦截" class="headerlink" title="0x02 安全软件拦截"></a><strong>0x02 安全软件拦截</strong></h3><p>在命令行中输入添加账号、密码的命令后，火绒会出现警告。火绒的拦截，实际就是安全软件对<strong>net.exe</strong>的调用进行了监控并拦截。火绒、360安全卫士等杀毒软件主要是对<code>net.exe</code>，<code>net1.exe</code>添加用户行为进行防护。</p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/1.png" style="zoom: 50%;">     
-
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/2.png" style="zoom: 50%;">    
-
-
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/1.png">    </p>
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/2.png"></p>
 <h3 id="0x03-绕过杀毒软件"><a href="#0x03-绕过杀毒软件" class="headerlink" title="0x03 绕过杀毒软件"></a><strong>0x03 绕过杀毒软件</strong></h3><p>在火绒和360开启核晶模式下添加kuary账户，火绒和360全程无感知。</p>
 <p><strong>火绒全程无感知：</strong></p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/3.png" style="zoom: 50%;">    
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/3.png"></p>
 <p><strong>360开启核晶全程无感知：</strong></p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/4.png" style="zoom: 50%;">    
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/4.png"></p>
 <h3 id="0x04-微步沙箱、VT沙箱、火绒、360卫士查杀率。"><a href="#0x04-微步沙箱、VT沙箱、火绒、360卫士查杀率。" class="headerlink" title="0x04 微步沙箱、VT沙箱、火绒、360卫士查杀率。"></a><strong>0x04 微步沙箱、VT沙箱、火绒、360卫士查杀率。</strong></h3><p><strong>微步沙箱</strong></p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/5.png" style="zoom: 50%;">
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/5.png"></p>
 <p><strong>VT沙箱</strong></p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/6.png" style="zoom: 50%;">
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/6.png"></p>
 <p><strong>火绒</strong></p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/7.png" style="zoom: 50%;">    
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/7.png"></p>
 <p><strong>360卫士</strong></p>
- <img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/8.png" style="zoom: 50%;">
-
-
-
+<p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/8.png"></p>
 <h3 id="0x05-完整代码"><a href="#0x05-完整代码" class="headerlink" title="0x05 完整代码"></a>0x05 完整代码</h3><p>代码原理为调用<code>NetUserAdd</code>API添加普通权限的本地用户，调用<code>NetLocalGroupAddMembers</code>API将用户添加到管理员权限组。</p>
 <pre><code>#ifndef UNICODE
 #define UNICODE
