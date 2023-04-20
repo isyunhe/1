@@ -511,8 +511,6 @@
             <div id="articleContent">
                 <h3 id="0x01-前言"><a href="#0x01-前言" class="headerlink" title="0x01 前言"></a><strong>0x01 前言</strong></h3><p>在渗透测试过程中，因有些需求，需要本地/远程添加用户从而登录远程桌面等服务进行横向(不考虑 hash 传递场景)，而直接通过<code>net.exe</code>进行添加用户，往往会被安全软件直接阻断拦截，所以直接选择<code>Windows API函数</code>进行编写，进行 Bypass AV。</p>
 <h3 id="0x02-安全软件拦截"><a href="#0x02-安全软件拦截" class="headerlink" title="0x02 安全软件拦截"></a><strong>0x02 安全软件拦截</strong></h3><p>在命令行中输入添加账号、密码的命令后，火绒会出现警告。火绒的拦截，实际就是安全软件对<strong>net.exe</strong>的调用进行了监控并拦截。火绒、360安全卫士等杀毒软件主要是对<code>net.exe</code>，<code>net1.exe</code>添加用户行为进行防护。</p>
-<img src="http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/1.png" alt="hexo image">
-
 <img src="(http://rt0fmnswo.hn-bkt.clouddn.com/blog/UserAdd%E5%85%8D%E6%9D%80360%E6%A0%B8%E6%99%B6/1.png">
 
 <p><img src="http://rt0fmnswo.hn-bkt.clouddn.com/1.png"></p>
